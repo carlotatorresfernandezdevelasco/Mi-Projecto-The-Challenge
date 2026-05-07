@@ -2,110 +2,261 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>TheChallenge</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoEnergía - ODS 7</title>
 
 <style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   background-color: #f4f9f4;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #2e7d32;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('images/solar.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
 }
 
 section {
-  padding: 20px;
-  margin: 15px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
   color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.image-section{
+  text-align:center;
+  margin:30px 0;
+}
+
+.image-section img{
+  width:100%;
+  max-width:800px;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.highlight{
+  background:#e8f5e9;
+  padding:20px;
+  border-left:6px solid #2e7d32;
+  border-radius:10px;
+  font-style:italic;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
-  background: #ddd;
+  padding: 20px;
+  background: #2e7d32;
+  color:white;
+  margin-top:40px;
 }
-</style>
 
+video{
+  border-radius:15px;
+  margin-top:20px;
+}
+
+button{
+  background:#2e7d32;
+  color:white;
+  border:none;
+  padding:15px 25px;
+  border-radius:10px;
+  cursor:pointer;
+  margin-top:20px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#1b5e20;
+  transform:scale(1.05);
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>EcoEnergía</h1>
-  <p>Soluciones sostenibles para el futuro</p>
+  <p>ODS 7 - Energía asequible y no contaminante</p>
+
+  <button onclick="mostrarMensaje()">
+    Descubre la energía sostenible
+  </button>
 </header>
 
-<section>
+<div class="container">
+
+<section class="highlight">
   <h2>Gancho</h2>
-  <p>“La energía del futuro está en nuestras manos: limpia, accesible y sostenible para todos.”</p>
+  <p>
+    “La energía del futuro está en nuestras manos: limpia, accesible y sostenible para todos.”
+  </p>
 </section>
+
+<div class="image-section">
+  <img src="images/energia.jpg" alt="Energía renovable">
+</div>
 
 <section>
   <h2>Necesidad</h2>
   <p>
-  El cambio climático es uno de los mayores problemas actuales y está relacionado con el uso de energías contaminantes como el carbón o el petróleo.Estas fuentes generan gases de efecto invernadero que dañan el medio ambiente y afectan a la salud de las personas.
-Esta problemática afecta a toda la población, pero especialmente a las nuevas generaciones, que vivirán las consecuencias en el futuro. Además, muchas zonas todavía dependen de energías no sostenibles por falta de alternativas accesibles.
-Durante la investigación, se ha observado que existe una falta de concienciación y de soluciones simples que puedan aplicarse en la vida cotidiana. Por ello, es importante desarrollar propuestas que acerquen la energía sostenible a las personas de forma práctica y comprensible.  </p>
+    El cambio climático es uno de los mayores problemas actuales y está relacionado con el uso de energías contaminantes como el carbón o el petróleo. Estas fuentes generan gases de efecto invernadero que dañan el medio ambiente y afectan a la salud de las personas.
+  </p>
+
+  <p>
+    Esta problemática afecta a toda la población, pero especialmente a las nuevas generaciones, que vivirán las consecuencias en el futuro. Además, muchas zonas todavía dependen de energías no sostenibles por falta de alternativas accesibles.
+  </p>
+
+  <p>
+    Durante la investigación, se ha observado que existe una falta de concienciación y de soluciones simples que puedan aplicarse en la vida cotidiana. Por ello, es importante desarrollar propuestas que acerquen la energía sostenible a las personas de forma práctica y comprensible.
+  </p>
 </section>
 
 <section>
   <h2>Beneficios</h2>
+
   <p>
-  La propuesta consiste en fomentar el uso de energías renovables mediante soluciones sencillas en el día a día, como pequeños sistemas solares domésticos o hábitos de consumo responsable.
-La originalidad del proyecto está en su enfoque educativo y accesible, ya que no se centra solo en grandes infraestructuras, sino en acciones que cualquier persona puede entender y aplicar.
-Entre los beneficios destacan la reducción de la contaminación, el ahorro energético y económico a largo plazo, y la mejora de la calidad de vida. Además, se contribuye a la protección del medio ambiente y a la lucha contra el cambio climático.
-En comparación con otras soluciones, esta propuesta es más cercana al usuario, más fácil de implementar y promueve la participación activa de la sociedad.  </p>
+    La propuesta consiste en fomentar el uso de energías renovables mediante soluciones sencillas en el día a día, como pequeños sistemas solares domésticos o hábitos de consumo responsable.
+  </p>
+
+  <p>
+    La originalidad del proyecto está en su enfoque educativo y accesible, ya que no se centra solo en grandes infraestructuras, sino en acciones que cualquier persona puede entender y aplicar.
+  </p>
+
+  <p>
+    Entre los beneficios destacan la reducción de la contaminación, el ahorro energético y económico a largo plazo, y la mejora de la calidad de vida. Además, se contribuye a la protección del medio ambiente y a la lucha contra el cambio climático.
+  </p>
+
+  <p>
+    En comparación con otras soluciones, esta propuesta es más cercana al usuario, más fácil de implementar y promueve la participación activa de la sociedad.
+  </p>
 </section>
+
+<div class="image-section">
+  <img src="images/familia.jpg" alt="Familia usando energía sostenible">
+</div>
 
 <section>
   <h2>Solución</h2>
+
   <p>
-  La solución consiste en el uso de pequeños paneles solares junto con una campaña de concienciación.El funcionamiento se basa en el uso de pequeños paneles solares que pueden alimentar dispositivos básicos, demostrando de forma práctica cómo funciona la energía renovable. Como prototipo, se puede presentar un esquema, maqueta o simulación del sistema.
-Durante el proceso, se ha comprobado que este tipo de soluciones son viables a pequeña escala y pueden servir como primer paso hacia un cambio mayor.
-La propuesta se ofrece a estudiantes y familias como una herramienta educativa, promoviendo su uso en hogares y centros educativos. Para garantizar su sostenibilidad, se basa en recursos renovables, bajo coste y fácil mantenimiento.  </p>
+    La solución consiste en el uso de pequeños paneles solares junto con una campaña de concienciación.
+  </p>
+
+  <p>
+    El funcionamiento se basa en el uso de pequeños paneles solares que pueden alimentar dispositivos básicos, demostrando de forma práctica cómo funciona la energía renovable. Como prototipo, se puede presentar un esquema, maqueta o simulación del sistema.
+  </p>
+
+  <p>
+    Durante el proceso, se ha comprobado que este tipo de soluciones son viables a pequeña escala y pueden servir como primer paso hacia un cambio mayor.
+  </p>
+
+  <p>
+    La propuesta se ofrece a estudiantes y familias como una herramienta educativa, promoviendo su uso en hogares y centros educativos. Para garantizar su sostenibilidad, se basa en recursos renovables, bajo coste y fácil mantenimiento.
+  </p>
 </section>
 
 <section>
   <h2>Colaboración</h2>
+
   <p>
-  Para llevar a cabo esta propuesta, sería importante contar con la colaboración de diferentes agentes.
-Por un lado, los centros educativos pueden ayudar a difundir el proyecto y aplicarlo en el aula como herramienta de aprendizaje. Los profesores aportarían conocimientos y apoyo en su desarrollo.
-También podrían participar instituciones públicas, como ayuntamientos, facilitando recursos o promoviendo iniciativas relacionadas con la sostenibilidad.
-Además, organizaciones medioambientales podrían contribuir con información y asesoramiento, reforzando la credibilidad del proyecto.
-Finalmente, la participación de la comunidad es fundamental, ya que son los usuarios quienes aplicarán estas soluciones en su vida diaria. Cada uno aporta compromiso y concienciación, lo que permite generar un impacto real.
+    Para llevar a cabo esta propuesta, sería importante contar con la colaboración de diferentes agentes.
+  </p>
+
+  <p>
+    Por un lado, los centros educativos pueden ayudar a difundir el proyecto y aplicarlo en el aula como herramienta de aprendizaje. Los profesores aportarían conocimientos y apoyo en su desarrollo.
+  </p>
+
+  <p>
+    También podrían participar instituciones públicas, como ayuntamientos, facilitando recursos o promoviendo iniciativas relacionadas con la sostenibilidad.
+  </p>
+
+  <p>
+    Además, organizaciones medioambientales podrían contribuir con información y asesoramiento, reforzando la credibilidad del proyecto.
+  </p>
+
+  <p>
+    Finalmente, la participación de la comunidad es fundamental, ya que son los usuarios quienes aplicarán estas soluciones en su vida diaria. Cada uno aporta compromiso y concienciación, lo que permite generar un impacto real.
   </p>
 </section>
 
 <section>
   <h2>Proceso y aprendizajes</h2>
+
   <p>
-  Durante este proyecto he aprendido la importancia de la energía sostenible y su impacto en el medio ambiente.También he desarrollado habilidades de investigación, organización de la información y pensamiento crítico.
-Además, he comprendido que pequeñas acciones pueden contribuir a cambios importantes, y que la concienciación social es clave para avanzar hacia un futuro más sostenible.  </p>
+    Durante este proyecto he aprendido la importancia de la energía sostenible y su impacto en el medio ambiente.
+  </p>
+
+  <p>
+    También he desarrollado habilidades de investigación, organización de la información y pensamiento crítico.
+  </p>
+
+  <p>
+    Además, he comprendido que pequeñas acciones pueden contribuir a cambios importantes, y que la concienciación social es clave para avanzar hacia un futuro más sostenible.
+  </p>
 </section>
 
 <section>
-  <h2>Vídeo</h2>
+  <h2>Vídeo del proyecto</h2>
+
   <video width="100%" controls>
     <source src="video.mp4" type="video/mp4">
     Tu navegador no soporta vídeo.
   </video>
+
 </section>
 
+</div>
+
 <footer>
-  <p>Autor: Carlota</p>
+  <p>Proyecto ODS7 | Autor: Carlota</p>
 </footer>
+
+<script>
+
+function mostrarMensaje(){
+  alert("La energía sostenible es clave para proteger nuestro planeta 🌍");
+}
+
+</script>
 
 </body>
 </html>
